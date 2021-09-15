@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: "{{ var_hosts | default('all')}}"
   become: yes
   pre_tasks:
     # Shared logic included here with pre-tasks
